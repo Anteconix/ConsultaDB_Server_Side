@@ -1,6 +1,6 @@
 const conexao = require("./db")
 ///Consulta com SELECT *
-conexao.conecta.query('SELECT * FROM unidade_medida', function(err, result, fields) 
+conexao.conecta.query('SELECT id_produto,nome_produto FROM produto', function(err, result, fields) 
 {
 if (err) throw err
 console.log(result)
